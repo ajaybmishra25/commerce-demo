@@ -1,0 +1,9 @@
+name: 'Commerce Common'
+type: module
+description: 'This module is used for writing Common Functionality codes'
+dependencies:
+  - commerce:commerce
+  - commerce:commerce_cart
+
+version: '8.x-1.0'
+core: '8.x'
