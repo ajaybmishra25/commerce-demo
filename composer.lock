@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9ac9b12d10105b12a5f00462150cc064",
+    "content-hash": "31f0ae7a070c18bb5ce50952d22f2ff2",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1333,7 +1333,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/belgrade.git",
-                "reference": "36107799e6ac0025a645a4e8507c977594b0c673"
+                "reference": "efdc324ae8c48fca9e6fce81781eece0cee0c313"
             },
             "require": {
                 "drupal/commerce_bootstrap": "^1.0",
@@ -1345,8 +1345,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta5+6-dev",
-                    "datestamp": "1583155325",
+                    "version": "8.x-1.0-beta5+11-dev",
+                    "datestamp": "1603825425",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -1384,7 +1384,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/belgrade"
             },
-            "time": "2020-03-30T11:22:34+00:00"
+            "time": "2020-10-27T18:57:09+00:00"
         },
         {
             "name": "drupal/bootstrap",
@@ -1471,9 +1471,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-2.2",
                     "datestamp": "1579552087",
@@ -1550,7 +1547,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-2.17",
-                    "datestamp": "1582923518",
+                    "datestamp": "1590598198",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1725,9 +1722,6 @@
             },
             "type": "drupal-theme",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.0-beta1",
                     "datestamp": "1532725981",
@@ -1760,7 +1754,7 @@
             "name": "drupal/commerce_cart",
             "version": "2.17.0",
             "require": {
-                "drupal/commerce": "self.version",
+                "drupal/commerce": "*",
                 "drupal/commerce_order": "*",
                 "drupal/commerce_product": "*",
                 "drupal/core": "^8.7.7 || ^9"
@@ -1769,7 +1763,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-2.17",
-                    "datestamp": "1582923518",
+                    "datestamp": "1590598198",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1821,13 +1815,10 @@
             "require": {
                 "drupal/commerce": "^2.13",
                 "drupal/commerce_cart": "*",
-                "drupal/core": "*"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.4",
                     "datestamp": "1560966488",
@@ -1842,6 +1833,14 @@
                 "GPL-2.0+"
             ],
             "authors": [
+                {
+                    "name": "Centarro",
+                    "homepage": "https://www.drupal.org/user/3661446"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
                 {
                     "name": "mglaman",
                     "homepage": "https://www.drupal.org/user/2416470"
@@ -1880,9 +1879,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.7",
                     "datestamp": "1555562286",
@@ -1916,7 +1912,7 @@
             "name": "drupal/commerce_checkout",
             "version": "2.17.0",
             "require": {
-                "drupal/commerce": "self.version",
+                "drupal/commerce": "*",
                 "drupal/commerce_cart": "*",
                 "drupal/commerce_order": "*",
                 "drupal/core": "^8.7.7 || ^9"
@@ -1925,7 +1921,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-2.17",
-                    "datestamp": "1582923518",
+                    "datestamp": "1590598198",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1961,57 +1957,6 @@
             }
         },
         {
-            "name": "drupal/commerce_currency_resolver",
-            "version": "1.53.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/commerce_currency_resolver.git",
-                "reference": "8.x-1.53"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/commerce_currency_resolver-8.x-1.53.zip",
-                "reference": "8.x-1.53",
-                "shasum": "2b56999d82567b5220e7656d90e83d79f11b4394"
-            },
-            "require": {
-                "drupal/commerce": "~2.10",
-                "drupal/commerce_exchanger": "^1.12",
-                "drupal/commerce_order": "^2.17",
-                "drupal/commerce_price": "^2.17",
-                "drupal/core": "^8 || ^9"
-            },
-            "require-dev": {
-                "drupal/commerce_shipping": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.53",
-                    "datestamp": "1590352105",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "valic",
-                    "homepage": "https://www.drupal.org/user/980550"
-                }
-            ],
-            "description": "Commerce 2 currency enhancements.",
-            "homepage": "https://www.drupal.org/project/commerce_currency_resolver",
-            "support": {
-                "source": "https://git.drupalcode.org/project/commerce_currency_resolver"
-            }
-        },
-        {
             "name": "drupal/commerce_demo",
             "version": "dev-1.x",
             "source": {
@@ -2030,7 +1975,7 @@
                 "drupal/commerce_promotion": "*",
                 "drupal/commerce_shipping": "^2.0",
                 "drupal/commerce_tax": "*",
-                "drupal/core": "*",
+                "drupal/core": "^8",
                 "drupal/facets": "^1.0",
                 "drupal/facets_pretty_paths": "^1.0",
                 "drupal/image_delta_formatter": "^1.0",
@@ -2080,60 +2025,10 @@
             "time": "2020-03-12T15:22:42+00:00"
         },
         {
-            "name": "drupal/commerce_exchanger",
-            "version": "1.14.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/commerce_exchanger.git",
-                "reference": "8.x-1.14"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/commerce_exchanger-8.x-1.14.zip",
-                "reference": "8.x-1.14",
-                "shasum": "64ab638af3cc1c225f3e8c424ad496ff03836ddd"
-            },
-            "require": {
-                "drupal/commerce": "~2.11",
-                "drupal/commerce_price": "*",
-                "drupal/core": "^8 || ^9"
-            },
-            "require-dev": {
-                "ext-simplexml": "*",
-                "roave/security-advisories": "dev-master"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.14",
-                    "datestamp": "1590352769",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "valic",
-                    "homepage": "https://www.drupal.org/user/980550"
-                }
-            ],
-            "description": "Commerce 2 currency exchange rates / converter.",
-            "homepage": "https://www.drupal.org/project/commerce_exchanger",
-            "support": {
-                "source": "https://git.drupalcode.org/project/commerce_exchanger"
-            }
-        },
-        {
             "name": "drupal/commerce_number_pattern",
             "version": "2.17.0",
             "require": {
-                "drupal/commerce": "self.version",
+                "drupal/commerce": "*",
                 "drupal/commerce_store": "*",
                 "drupal/core": "^8.7.7 || ^9"
             },
@@ -2141,7 +2036,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-2.17",
-                    "datestamp": "1582923518",
+                    "datestamp": "1590598198",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2180,7 +2075,7 @@
             "name": "drupal/commerce_order",
             "version": "2.17.0",
             "require": {
-                "drupal/commerce": "self.version",
+                "drupal/commerce": "*",
                 "drupal/commerce_number_pattern": "*",
                 "drupal/commerce_price": "*",
                 "drupal/commerce_store": "*",
@@ -2193,7 +2088,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-2.17",
-                    "datestamp": "1582923518",
+                    "datestamp": "1590598198",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2232,7 +2127,7 @@
             "name": "drupal/commerce_payment",
             "version": "2.17.0",
             "require": {
-                "drupal/commerce": "self.version",
+                "drupal/commerce": "*",
                 "drupal/commerce_order": "*",
                 "drupal/core": "^8.7.7 || ^9",
                 "drupal/entity_reference_revisions": "*"
@@ -2241,7 +2136,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-2.17",
-                    "datestamp": "1582923518",
+                    "datestamp": "1590598198",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2280,7 +2175,7 @@
             "name": "drupal/commerce_payment_example",
             "version": "2.17.0",
             "require": {
-                "drupal/commerce": "self.version",
+                "drupal/commerce": "*",
                 "drupal/commerce_payment": "*",
                 "drupal/core": "^8.7.7 || ^9"
             },
@@ -2288,7 +2183,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-2.17",
-                    "datestamp": "1582923518",
+                    "datestamp": "1590598198",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2386,14 +2281,14 @@
             "name": "drupal/commerce_price",
             "version": "2.17.0",
             "require": {
-                "drupal/commerce": "self.version",
+                "drupal/commerce": "*",
                 "drupal/core": "^8.7.7 || ^9"
             },
             "type": "metapackage",
             "extra": {
                 "drupal": {
                     "version": "8.x-2.17",
-                    "datestamp": "1582923518",
+                    "datestamp": "1590598198",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2432,7 +2327,7 @@
             "name": "drupal/commerce_product",
             "version": "2.17.0",
             "require": {
-                "drupal/commerce": "self.version",
+                "drupal/commerce": "*",
                 "drupal/commerce_price": "*",
                 "drupal/commerce_store": "*",
                 "drupal/core": "^8.7.7 || ^9"
@@ -2441,7 +2336,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-2.17",
-                    "datestamp": "1582923518",
+                    "datestamp": "1590598198",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2480,7 +2375,7 @@
             "name": "drupal/commerce_promotion",
             "version": "2.17.0",
             "require": {
-                "drupal/commerce": "self.version",
+                "drupal/commerce": "*",
                 "drupal/commerce_order": "*",
                 "drupal/core": "^8.7.7 || ^9"
             },
@@ -2488,7 +2383,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-2.17",
-                    "datestamp": "1582923518",
+                    "datestamp": "1590598198",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2546,12 +2441,9 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-2.0-rc1",
-                    "datestamp": "1583429595",
+                    "datestamp": "1583436177",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -2594,7 +2486,7 @@
             "name": "drupal/commerce_store",
             "version": "2.17.0",
             "require": {
-                "drupal/commerce": "self.version",
+                "drupal/commerce": "*",
                 "drupal/commerce_price": "*",
                 "drupal/core": "^8.7.7 || ^9"
             },
@@ -2602,7 +2494,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-2.17",
-                    "datestamp": "1582923518",
+                    "datestamp": "1590598198",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2641,7 +2533,7 @@
             "name": "drupal/commerce_tax",
             "version": "2.17.0",
             "require": {
-                "drupal/commerce": "self.version",
+                "drupal/commerce": "*",
                 "drupal/commerce_order": "*",
                 "drupal/commerce_price": "*",
                 "drupal/core": "^8.7.7 || ^9"
@@ -2650,7 +2542,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-2.17",
-                    "datestamp": "1582923518",
+                    "datestamp": "1590598198",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2709,9 +2601,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-3.0-beta3",
                     "datestamp": "1585257896",
@@ -3408,9 +3297,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.0",
                     "datestamp": "1582735747",
@@ -3444,6 +3330,10 @@
                 {
                     "name": "fago",
                     "homepage": "https://www.drupal.org/user/16747"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
                 }
             ],
             "description": "Provides expanded entity APIs, which will be moved to Drupal core one day.",
@@ -3474,9 +3364,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.8",
                     "datestamp": "1583961846",
@@ -3561,6 +3448,14 @@
                 {
                     "name": "borisson_",
                     "homepage": "https://www.drupal.org/user/2393360"
+                },
+                {
+                    "name": "drunken monkey",
+                    "homepage": "https://www.drupal.org/user/205582"
+                },
+                {
+                    "name": "mkalkbrenner",
+                    "homepage": "https://www.drupal.org/user/124705"
                 }
             ],
             "description": "The Facet module allows site builders to easily create and manage faceted search interfaces.",
@@ -3606,15 +3501,12 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.0",
                     "datestamp": "1568102885",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "composer-exit-on-patch-failure": true,
@@ -3669,8 +3561,8 @@
                     "homepage": "https://www.drupal.org/user/1885838"
                 },
                 {
-                    "name": "dasjo",
-                    "homepage": "https://www.drupal.org/user/228295"
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
                 }
             ],
             "description": "Facets Pretty Paths module.",
@@ -3697,13 +3589,10 @@
                 "shasum": "30df2a70ac6d872c282083529592f5b57a6066da"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.0",
                     "datestamp": "1521667380",
@@ -3975,9 +3864,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.1",
                     "datestamp": "1581940864",
@@ -4042,9 +3928,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.1",
                     "datestamp": "1582134004",
@@ -4167,7 +4050,7 @@
             "version": "1.16.0",
             "require": {
                 "drupal/core": "~8.0",
-                "drupal/search_api": "self.version"
+                "drupal/search_api": "*"
             },
             "type": "metapackage",
             "extra": {
@@ -4224,9 +4107,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.0",
                     "datestamp": "1582902575",
@@ -4386,9 +4266,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-3.4",
                     "datestamp": "1545492780",
@@ -4404,12 +4281,20 @@
             ],
             "authors": [
                 {
-                    "name": "NickWilde",
+                    "name": "NickDickinsonWilde",
                     "homepage": "https://www.drupal.org/user/3094661"
                 },
                 {
                     "name": "andrey.troeglazov",
                     "homepage": "https://www.drupal.org/user/3145389"
+                },
+                {
+                    "name": "ashrafabed",
+                    "homepage": "https://www.drupal.org/user/1875528"
+                },
+                {
+                    "name": "bmack",
+                    "homepage": "https://www.drupal.org/user/3594520"
                 },
                 {
                     "name": "dstol",
@@ -4418,6 +4303,10 @@
                 {
                     "name": "nerdstein",
                     "homepage": "https://www.drupal.org/user/1557710"
+                },
+                {
+                    "name": "rwanth",
+                    "homepage": "https://www.drupal.org/user/3564319"
                 }
             ],
             "description": "Creates menu items based on associations to taxonomy vocabularies",
@@ -4436,10 +4325,10 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/taxonomy_term_depth.git",
-                "reference": "29fafed7ba6c265bcaca1ee50734caa833533120"
+                "reference": "69d6f431acacdddc66c899861338f208ac8328a9"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
@@ -4447,8 +4336,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.4+0-dev",
-                    "datestamp": "1576619584",
+                    "version": "8.x-2.5+5-dev",
+                    "datestamp": "1614850268",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -4457,7 +4346,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -4470,11 +4359,11 @@
                 }
             ],
             "description": "Provides field for storing taxonomy depth value and some wrappers integration with modules",
-            "homepage": "https://www.drupal.org/project/taxonomy_term_depth",
+            "homepage": "http://drupal.org/project/taxonomy_term_depth",
             "support": {
                 "source": "https://git.drupalcode.org/project/taxonomy_term_depth"
             },
-            "time": "2019-12-20T15:13:23+00:00"
+            "time": "2021-03-04T09:30:47+00:00"
         },
         {
             "name": "drupal/token",
@@ -4491,7 +4380,7 @@
                 "shasum": "c7e3a3757282e4c94e3c1fff08d01e22155cb853"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9"
+                "drupal/core": "^8.7.7 || ^9"
             },
             "type": "drupal-module",
             "extra": {
@@ -5250,16 +5139,16 @@
         },
         {
             "name": "pear/archive_tar",
-            "version": "1.4.9",
+            "version": "1.4.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/Archive_Tar.git",
-                "reference": "c5b00053770e1d72128252c62c2c1a12c26639f0"
+                "reference": "2b87b41178cc6d4ad3cba678a46a1cae49786011"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/Archive_Tar/zipball/c5b00053770e1d72128252c62c2c1a12c26639f0",
-                "reference": "c5b00053770e1d72128252c62c2c1a12c26639f0",
+                "url": "https://api.github.com/repos/pear/Archive_Tar/zipball/2b87b41178cc6d4ad3cba678a46a1cae49786011",
+                "reference": "2b87b41178cc6d4ad3cba678a46a1cae49786011",
                 "shasum": ""
             },
             "require": {
@@ -5312,7 +5201,17 @@
                 "archive",
                 "tar"
             ],
-            "time": "2019-12-04T10:17:28+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/mrook",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/michielrook",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2021-02-16T10:50:50+00:00"
         },
         {
             "name": "pear/console_getopt",
@@ -5407,23 +5306,23 @@
         },
         {
             "name": "pear/pear_exception",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/PEAR_Exception.git",
-                "reference": "dbb42a5a0e45f3adcf99babfb2a1ba77b8ac36a7"
+                "reference": "b14fbe2ddb0b9f94f5b24cf08783d599f776fff0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/PEAR_Exception/zipball/dbb42a5a0e45f3adcf99babfb2a1ba77b8ac36a7",
-                "reference": "dbb42a5a0e45f3adcf99babfb2a1ba77b8ac36a7",
+                "url": "https://api.github.com/repos/pear/PEAR_Exception/zipball/b14fbe2ddb0b9f94f5b24cf08783d599f776fff0",
+                "reference": "b14fbe2ddb0b9f94f5b24cf08783d599f776fff0",
                 "shasum": ""
             },
             "require": {
-                "php": ">=4.4.0"
+                "php": ">=5.2.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "*"
+                "phpunit/phpunit": "<9"
             },
             "type": "class",
             "extra": {
@@ -5458,7 +5357,7 @@
             "keywords": [
                 "exception"
             ],
-            "time": "2019-12-10T10:24:42+00:00"
+            "time": "2021-03-21T15:43:46+00:00"
         },
         {
             "name": "psr/container",
@@ -8243,12 +8142,12 @@
             "version": "1.8.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
+                "url": "https://github.com/webmozarts/assert.git",
                 "reference": "ab2cb0b3b559010b75981b1bdce728da3ee90ad6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/ab2cb0b3b559010b75981b1bdce728da3ee90ad6",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/ab2cb0b3b559010b75981b1bdce728da3ee90ad6",
                 "reference": "ab2cb0b3b559010b75981b1bdce728da3ee90ad6",
                 "shasum": ""
             },
@@ -9189,6 +9088,107 @@
                 "standards"
             ],
             "time": "2020-05-08T10:20:59+00:00"
+        },
+        {
+            "name": "drupal/commerce_currency_resolver",
+            "version": "1.53.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/commerce_currency_resolver.git",
+                "reference": "8.x-1.53"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/commerce_currency_resolver-8.x-1.53.zip",
+                "reference": "8.x-1.53",
+                "shasum": "2b56999d82567b5220e7656d90e83d79f11b4394"
+            },
+            "require": {
+                "drupal/commerce": "~2.10",
+                "drupal/commerce_exchanger": "^1.12",
+                "drupal/commerce_order": "^2.17",
+                "drupal/commerce_price": "^2.17",
+                "drupal/core": "^8 || ^9"
+            },
+            "require-dev": {
+                "drupal/commerce_shipping": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.53",
+                    "datestamp": "1590352105",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "valic",
+                    "homepage": "https://www.drupal.org/user/980550"
+                }
+            ],
+            "description": "Commerce 2 currency enhancements.",
+            "homepage": "https://www.drupal.org/project/commerce_currency_resolver",
+            "support": {
+                "source": "https://git.drupalcode.org/project/commerce_currency_resolver"
+            }
+        },
+        {
+            "name": "drupal/commerce_exchanger",
+            "version": "1.14.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/commerce_exchanger.git",
+                "reference": "8.x-1.14"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/commerce_exchanger-8.x-1.14.zip",
+                "reference": "8.x-1.14",
+                "shasum": "64ab638af3cc1c225f3e8c424ad496ff03836ddd"
+            },
+            "require": {
+                "drupal/commerce": "~2.11",
+                "drupal/commerce_price": "*",
+                "drupal/core": "^8 || ^9"
+            },
+            "require-dev": {
+                "ext-simplexml": "*",
+                "roave/security-advisories": "dev-master"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.14",
+                    "datestamp": "1590352769",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "valic",
+                    "homepage": "https://www.drupal.org/user/980550"
+                }
+            ],
+            "description": "Commerce 2 currency exchange rates / converter.",
+            "homepage": "https://www.drupal.org/project/commerce_exchanger",
+            "support": {
+                "source": "https://git.drupalcode.org/project/commerce_exchanger"
+            }
         },
         {
             "name": "drupal/core-dev",
@@ -10184,6 +10184,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2017-11-27T05:48:46+00:00"
         },
         {
